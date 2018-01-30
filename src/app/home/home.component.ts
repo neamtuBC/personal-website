@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { NavStateService } from '../nav-state.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  selectedTab:string = "";
+
+  constructor( private _navState: NavStateService) { }
+
+  changeNav(){
+    this.selectedTab="contact";
+    this._navState.changeSelectedTab(this.selectedTab);
+  }
 
   ngOnInit() {
+
   }
 
 }

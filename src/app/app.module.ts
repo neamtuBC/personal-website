@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { NavStateService } from './nav-state.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -22,7 +23,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NavStateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
