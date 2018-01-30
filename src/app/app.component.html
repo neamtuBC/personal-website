@@ -3,25 +3,25 @@
   </div>
   <ul>
     <li>
-      <a routerLink="" id="focusMe">
+      <a routerLink="" [ngClass]="{'active':selectedTab === 'home'}" (click)="selectedTab = 'home'">
         <p>home</p>
         <i class="fas fa-home"></i>
       </a>
     </li>
     <li>
-      <a routerLink="about">
+      <a routerLink="about" [ngClass]="{'active':selectedTab === 'about'}" (click)="selectedTab = 'about'">
         <p>about</p>
         <i class="fas fa-user"></i>
       </a>
     </li>
     <li>
-      <a routerLink="work">
+      <a routerLink="work" [ngClass]="{'active':selectedTab === 'work'}" (click)="selectedTab = 'work'">
         <p>work</p>
         <i class="fas fa-briefcase"></i>
       </a>
     </li>
     <li>
-      <a routerLink="contact">
+      <a routerLink="contact" [ngClass]="{'active':selectedTab === 'contact'}" (click)="selectedTab = 'contact'">
         <p>contact</p>
         <i class="fas fa-envelope"></i>
       </a>
