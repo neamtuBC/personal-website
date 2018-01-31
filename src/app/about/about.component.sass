@@ -1,0 +1,78 @@
+$bg-gray: #252525
+$text-gray: #414040
+$text-blue: #3eb3cc
+
+.page
+  .content
+    margin-left: 12%
+    cursor: default
+    z-index: 1000
+
+    h2
+      color: $text-blue
+      font-size: 45px
+      line-height: 1
+
+    ul
+      list-style: none
+      height: 190px
+
+    li
+      &:before
+        content: "•"
+        color: $text-blue
+        display: inline-block
+        width: 1em
+        margin-left: -1em
+
+    p
+      padding: 20px
+      margin-left: -20px
+
+    p, ul li
+      font-family: 'Titillium Web', sans-serif
+      max-width: 700px
+      color: white
+      font-size: 20px
+      font-weight: 200
+      line-height: 1
+      transition: all 0.5s
+
+      &:hover
+        line-height: 2
+        font-size: 22px
+
+      em
+        font-style: normal
+        transition: color 0.2s
+        &:hover
+          color: $text-blue
+
+
+
+    ul li
+      margin-top: 5px
+
+@media (max-width: 600px)
+  .page
+    .content
+      margin-left: 0
+
+      h2
+        font-size: 25px
+        padding: 0px 20px
+        margin: 20px 0
+
+      p
+        margin-left: 0
+        padding: 0px 20px
+
+      p, ul li
+        font-size: 16px
+
+        &:hover
+          line-height: 2
+          font-size: 18px
+
+      ul
+        height: auto
