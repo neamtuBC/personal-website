@@ -1,6 +1,6 @@
 <div class="page work">
   <h1 class="bgText">work</h1>
-  <div class="projectList">
+  <div *ngIf="!flag" class="projectList">
     <div class="prj" *ngFor="let project of allProjects;  let i = index">
       <a class="project" [style.background-image]="project.projectImage" (click)="changeProject(i)">
         <span></span>
@@ -8,6 +8,7 @@
     </div>
   </div>
   <div *ngIf="flag" class="projectDescription">
+    <a class="backButton" (click)="disableDescription()"> < ALL PROJECTS </a>
     <h2>{{ currentProject.projectName }}</h2>
     <h3>DESCRIPTION</h3>
     <p>{{ currentProject.projectDescription }}</p>

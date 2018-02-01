@@ -5,14 +5,17 @@ $text-blue: #3eb3cc
 
 .work
   align-items: center
-  justify-content: space-between
+  justify-content: space-around
 
   .projectList
     margin-left: 65px
-    max-width: 410px
+    width: 100%
+    max-height: 100%
+    overflow: hidden
+    text-align: center
 
     .prj
-      float: left
+      display: inline-block
 
       .project
         height: 200px
@@ -24,6 +27,7 @@ $text-blue: #3eb3cc
         margin-left: 2px
         margin-top: 2px
         position: relative
+
 
         span
           content: ""
@@ -56,7 +60,8 @@ $text-blue: #3eb3cc
             opacity: 0.9
 
   .projectDescription
-    padding-left: 20px
+    padding: 0px 100px
+    z-index: 0
 
     h2
       color: $text-blue
@@ -99,5 +104,22 @@ $text-blue: #3eb3cc
       box-shadow: 0px 4px 8px rgba(0,0,0,0.4)
       margin-top: 30px
 
+
       &:hover
         color: white
+
+
+@media (max-width: 600px)
+  .work
+    margin-left: -1px
+    .projectList
+      margin: 0%
+      overflow: visible
+
+      .prj
+        .project
+          height: 180px
+          width: 180px
+
+    .projectDescription
+      padding: 20px
