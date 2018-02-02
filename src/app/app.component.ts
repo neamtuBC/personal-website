@@ -15,7 +15,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this._navState.myTab.subscribe(res => this.selectedTab = res);
     this._navState.changeSelectedTab(this.selectedTab);
-    this.selectedTab = window.location.pathname;
+    if(window.location.pathname != "/personal-website/"){
+      this.selectedTab = window.location.pathname;
+    }
+    console.log(this.selectedTab);
+    console.log(window.location);
   }
 
 }
