@@ -1,8 +1,8 @@
 <div class="page work">
   <h1 class="bgText">work</h1>
-  <div *ngIf="!flag" class="projectList">
+  <div *ngIf="!flag" class="projectList" [@description]=''>
     <h2>Here are my projects:</h2>
-    <div class="prj" *ngFor="let project of allProjects;  let i = index">
+    <div class="prj" *ngFor="let project of allProjects;  let i = index" >
       <a class="project" [style.background-image]="project.projectImage" (click)="changeProject(i)">
         <span></span>
       </a>
@@ -10,7 +10,7 @@
   </div>
   <div *ngIf="flag" class="projectDescription" [@description]>
     <div class="projectInfo">
-      <a class="backButton" (click)="disableDescription()"> < ALL PROJECTS </a>
+      <a class="backButton" (click)="disableDescription()"> ALL PROJECTS </a>
       <h2>{{ currentProject.projectName }}</h2>
       <h3>DESCRIPTION</h3>
       <p>{{ currentProject.projectDescription }}</p>
