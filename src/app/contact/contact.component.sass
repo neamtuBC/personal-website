@@ -65,8 +65,12 @@ $text-blue: #3eb3cc
   agm-map
     height: 100%
     width: 100%
-    opacity: 0.5
+    opacity: 0.4
     z-index: 0
+    transition: all 0.5s
+
+    &:hover
+      opacity: 1
 
 
 @media (max-width: 600px)
@@ -75,4 +79,4 @@ $text-blue: #3eb3cc
     form
       margin: 0
     agm-map
-      height: 70%
+      height: 80%
