@@ -18,8 +18,6 @@ export class AppComponent implements OnInit {
     if(window.location.pathname != "/personal-website/"){
       this.selectedTab = window.location.pathname;
     }
-    console.log(this.selectedTab);
-    console.log(window.location);
   }
 
 }

@@ -1,0 +1,78 @@
+//vars
+$bg-gray: #252525
+$text-gray: #414040
+$text-blue: #3eb3cc
+
+.contact
+  form
+    z-index: 0
+    margin-left: 65px
+    width: 75%
+    font-family: 'Titillium Web', sans-serif
+    padding: 20px
+
+    h2
+      color: white
+      font-weight: 200
+      line-height: 1
+
+    input, textarea
+      font-family: 'Titillium Web', sans-serif
+      display: block
+      width: 100%
+      margin-top: 2px
+      background-color: $text-gray
+      border: 2px solid fade-out($bg-gray, 0.5)
+      font-size: 16px
+      color: white
+
+      &:focus
+            outline: none
+            border: 2px solid $text-blue
+            background-color: fade-out(white,0.9)
+            font-size: 16px
+
+    input
+      height: 30px
+
+    textarea
+      height: 250px
+
+    span
+      display: block
+      color: $text-blue
+      margin-top: 15px
+      font-size: 20px
+      font-weight: 200
+
+    .submit-wrap
+      text-align: right
+      float: right
+      margin-top: 20px
+
+      input
+        width: auto
+        font-family: 'Titillium Web', sans-serif
+        color: $text-gray
+        background-color: $text-blue
+        padding: 2px 20px
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.4)
+        border: none
+
+        &:hover
+          color: white
+          cursor: pointer
+  agm-map
+    height: 100%
+    width: 100%
+    opacity: 0.5
+    z-index: 0
+
+
+@media (max-width: 600px)
+  .contact
+    flex-direction: column
+    form
+      margin: 0
+    agm-map
+      height: 70%
