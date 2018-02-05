@@ -28,14 +28,14 @@ export class WorkComponent implements OnInit {
   allProjects = [
     {
       projectName : "The history of Cluj",
-      projectDescription : "A responsive website for a nice presentation of the history of Cluj-Napoca. The website is designed as a timeline witch contains several sections.",
+      projectDescription : "A responsive website for a nice presentation of the history of Cluj-Napoca. The website is designed as a timeline which contains several sections from different perionds of time.",
       projectURL: "http://www.istoriaclujului.ml/",
       projectTechnologies: ["Jekyll", "HTML", "SASS", "JavaScript", "jQuery"],
       projectImage: "url('./assets/img/istoriaclujului.jpg')"
     },
     {
       projectName : "Responsive Theme",
-      projectDescription : "A resposive theme where the owner can publish informations about his work, skills or his clients. The information displayed on the page can be easly edited just by modify a txt file. So, the owner does not have to know to code for editing his personal page.",
+      projectDescription : "A resposive theme where the owner can publish informations about his work, skills or about his clients. The information displayed on the page can be easly edited just by modify a txt file. So, the owner does not have to know to code for editing his personal page.",
       projectURL: "https://neamtubc.github.io/ArtistPortfolio/",
       projectTechnologies: ["Jekyll", "HTML", "SASS", "JavaScript", "jQuery"],
       projectImage: "url('./assets/img/arthisttheme.jpg')"
@@ -49,7 +49,7 @@ export class WorkComponent implements OnInit {
     },
     {
       projectName : "Canvas balls",
-      projectDescription : "A little project where I tested the canvas properties. The website contains severals balls witch are changing their position permanently. The user can interact with this balls with the mouse cursor.",
+      projectDescription : "A little project where I tested the canvas properties. The website contains severals balls which are changing their position permanently. The user can interact with this balls with the mouse cursor.",
       projectURL: "https://neamtubc.github.io/BulineleMiscatoarele/",
       projectTechnologies: ["HTML", "CSS", "JavaScript", "jQuery"],
       projectImage: "url('./assets/img/canvasballs.jpg')"
