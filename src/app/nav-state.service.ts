@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 @Injectable()
 export class NavStateService {
 
-  private selectedTab = new BehaviorSubject<string>('/personal-website/home');
+  private selectedTab = new BehaviorSubject<string>('/home');
   myTab = this.selectedTab.asObservable();
 
   constructor() { }

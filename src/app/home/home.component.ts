@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   constructor( private _navState: NavStateService) { }
 
   changeNav(){
-    this.selectedTab="contact";
+    this.selectedTab="/contact";
     this._navState.changeSelectedTab(this.selectedTab);
   }
 

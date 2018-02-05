@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AgmCoreModule } from '@agm/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,7 +29,7 @@ import { ContactComponent } from './contact/contact.component';
       apiKey: 'AIzaSyBw8QhojlshLf1Q7f3_IMp9QoCHJ8wOL_E'
     })
   ],
-  providers: [NavStateService],
+  providers: [NavStateService,{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

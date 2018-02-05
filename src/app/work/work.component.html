@@ -18,9 +18,9 @@
       <ul>
         <li  *ngFor="let tech of currentProject.projectTechnologies">{{ tech }}</li>
       </ul>
-      <a href="{{ currentProject.projectURL }}">VISIT PAGE</a>
+      <a href="{{ currentProject.projectURL }}" target="_blank">VISIT PAGE</a>
     </div>
-    <a href="{{ currentProject.projectURL }}">
+    <a href="{{ currentProject.projectURL }}" target="_blank">
       <div class="img-desc" [style.background-image]="currentProject.projectImage">
       </div>
     </a>
