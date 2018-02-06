@@ -16,9 +16,15 @@ export class AppComponent implements OnInit {
     this._navState.myTab.subscribe(res => this.selectedTab = res);
     this._navState.changeSelectedTab(this.selectedTab);
 
-    if(window.location.pathname != "/"){
+    if(window.location.hash != "#/"){
+
+      if(window.location.hash == ''){
+        this.selectedTab = "/home";
+      } else {
       this.selectedTab = window.location.hash.slice(1);
     }
+    }
+
   }
 
 }
