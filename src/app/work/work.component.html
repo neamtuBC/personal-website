@@ -3,7 +3,7 @@
   <div *ngIf="!flag" class="projectList" [@description]=''>
     <h2>Here are my projects:</h2>
     <div class="prj" *ngFor="let project of allProjects;  let i = index" >
-      <a class="project" [style.background-image]="project.projectImage" (click)="changeProject(i)">
+      <a class="project" [style.background-image]="project.smallImage" (click)="changeProject(i)">
         <span></span>
       </a>
     </div>
